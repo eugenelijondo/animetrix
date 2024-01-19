@@ -1,0 +1,123 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F5F5DC; /* Beige */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #F5F5DC;
+    color: #000; /* Black text */
+    text-align: center;
+    padding: 20px;
+}
+
+.navigation-container {
+    display: flex;
+    justify-content: space-around;
+    background-color: #F5F5DC; /* Beige */
+    padding: 10px;
+}
+
+.navigation-button {
+    padding: 10px 20px;
+    font-size: 12px;
+    cursor: pointer;
+    color: #000; /* Black text */
+    border: 1px solid #000; /* Black border */
+    background-color: transparent;
+    border-radius: 5px; /* Add border-radius for rounded corners */
+}
+
+.navigation-button:hover {
+    background-color: #00FF00; /* Light Green on hover */
+}
+
+.content-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 20px;
+}
+
+.anime-image {
+    width: 100%; /* Set the width to take three quarters of the page */
+    height: auto;
+    margin: 20px 0;
+}
+
+.contact a img {
+    width: 75px; /* Set the width of the images */
+    height: 75px; /* Set the height of the images */
+    border: 1px solid transparent; /* Add a transparent border */
+    border-radius: 50%; /* Make the border circular */
+    transition: border 0.3s, color 0.3s; /* Add transition for hover effect */
+}
+
+.anime-image:hover,
+.contact a:hover img {
+    border: 1px solid #000; /* Change border color on hover to black */
+}
+
+.contact {
+    margin: 20px;
+    text-align: center;
+}
+
+.contact-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row; /* Display in a row */
+    justify-content: center; /* Center items horizontally */
+}
+
+.contact li {
+    margin-right: 20px; /* Add spacing between items */
+}
+
+.contact a {
+    text-decoration: none;
+    color: #333; /* Change color to match the design */
+    display: flex;
+    align-items: center; /* Center items vertically */
+}
+
+.contact a img {
+    margin-right: 10px; /* Add spacing between icon and text */
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row; /* Display in a row */
+    gap: 10px;
+    justify-content: flex-end; /* Align to the top right */
+    margin: 20px; /* Add margin for better spacing */
+}
+
+.help-button,
+.info-button {
+    padding: 10px 20px;
+    font-size: 10px;
+    cursor: pointer;
+    color: #000; /* Black text */
+    border: none;
+}
+
+.help-button {
+    background-color: #4B0082; /* Indigo */
+}
+
+.info-button {
+    background-color: #4B0082; /* Indigo */
+}
+
+.help-button:hover,
+.info-button:hover {
+    background-color: #800080; /* Purple */
+}
